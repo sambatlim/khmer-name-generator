@@ -2,12 +2,24 @@
   "name": "khmer-name-generator",
   "version": "1.0.0",
   "description": "khmer name generator is the package to generate real khmer name, name of the cambodia city and province including the lat long",
+  "keywords": [
+    "khmer",
+    "name",
+    "cambodia",
+    "province",
+    "lat long"
+  ],
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambatlim/khmer-name-generator.git"
+  },
+  "author": "Sambat Lim <sambatlim86@gmail.com>",
+  "license": "MIT",
+  "private": false,
   "devDependencies": {
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"

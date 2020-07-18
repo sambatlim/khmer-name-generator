@@ -1,3 +1,9 @@
-const getrandomname = require('./lib/util');
+const getrandomname = require('./lib/namegenerator');
+const provincewithlatlong = require('./lib/addressgenerator')
 
-console.log(getrandomname.getRandomLastname());
+
+let methods = {};
+methods.name = getrandomname;
+methods.provincewithlatlong = provincewithlatlong;
+
+module.exports = methods
