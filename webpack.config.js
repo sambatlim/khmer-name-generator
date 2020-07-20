@@ -5,6 +5,7 @@ module.exports = {
     mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'khmernamegenerator.js'
+        filename: 'khmernamegenerator.min.js',
+        library: 'khmerNameGenerator'
     }
 };
