@@ -17,8 +17,20 @@ node --version
 ```
 
 ### Installing and usage
+Install in the browser
+```
+<script src="khmernamegenerator.min.js" type="text/javascript"></script>
+<script>
+  console.log(khmerNameGenerator.name.getRandomName());
+  console.log(khmerNameGenerator.name.getRandomFirstname());
+  console.log(khmerNameGenerator.name.getRandomLastname());
+  console.log(khmerNameGenerator.provincewithlatlong.getProvinceWithLatLong());
+</script>
+```
 
-Install the package with your npm
+___
+
+Install the package with npm
 ```
 npm install khmer-name-generator
 ```
