@@ -19,7 +19,7 @@ node --version
 ### Installing and usage
 Install in the browser
 ```
-<script src="khmernamegenerator.min.js" type="text/javascript"></script>
+<script src="./dist/khmernamegenerator.min.js" type="text/javascript"></script>
 <script>
   console.log(khmerNameGenerator.name.getRandomName());
   console.log(khmerNameGenerator.name.getRandomFirstname());
