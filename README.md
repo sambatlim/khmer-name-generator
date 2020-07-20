@@ -1,7 +1,7 @@
 
 # Khmer Name Generator
 
-This package is able to generate real khmer name in khmer alphabets(Unicode range: U+1780–U+17FF Khmer; U+19E0–U+19FF Khmer Symbols) and cambodia province name with city including Lat Long (update 2020). 
+This package is able to generate real khmer name in khmer alphabets(Unicode range: U+1780–U+17FF Khmer; U+19E0–U+19FF Khmer Symbols) and cambodia province name with city including Lat Long (update 2020) **[Working demo](https://sambatlim.github.io/khmer-name-generator/)**. 
 
 ## Getting Started
 
