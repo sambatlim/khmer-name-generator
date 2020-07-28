@@ -7,17 +7,19 @@
     <title>khmernamegenerator</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             padding: 0px;
             box-sizing: border-box;
             margin: 0px;
         }
-        .main{
+
+        .main {
             min-height: 100vh;
-            background: rgb(174,238,237);
-            background: linear-gradient(162deg, rgba(174,238,237,1) 0%, rgba(142,148,255,0.9416141456582633) 100%);
+            background: rgb(174, 238, 237);
+            background: linear-gradient(162deg, rgba(174, 238, 237, 1) 0%, rgba(142, 148, 255, 0.9416141456582633) 100%);
         }
-        .header{
+
+        .header {
             background-color: white;
             color: navy;
             min-height: 50px;
@@ -25,9 +27,10 @@
             justify-content: center;
             align-items: center;
             font-family: 'Playfair Display', serif;
-            
+
         }
-        .text--section{
+
+        .text--section {
             margin-top: 25px;
             display: flex;
             justify-content: center;
@@ -38,19 +41,20 @@
             border-radius: 25px;
         }
 
-        .main--text--section{
-            padding:0px 50px;
+        .main--text--section {
+            padding: 0px 50px;
         }
-        .button--main--layout{
+
+        .button--main--layout {
             display: flex;
             justify-content: space-around;
             margin-top: 25px;
         }
 
-        button{
-           border-radius: 25px;
+        button {
+            border-radius: 25px;
             border: none;
-           color: white;
+            color: white;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -59,18 +63,21 @@
             margin: 4px 2px;
             cursor: pointer;
             outline: none;
-            background: rgb(15,8,142);
-            background: linear-gradient(90deg, rgba(15,8,142,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+            background: rgb(15, 8, 142);
+            background: linear-gradient(90deg, rgba(15, 8, 142, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(0, 212, 255, 1) 100%);
         }
-        button:active{
+
+        button:active {
             background-color: #2856ad;
             box-shadow: 0 5px rgb(255, 255, 255);
-            transform: translateY(4px);   
+            transform: translateY(4px);
         }
-        .province{
+
+        .province {
             padding: 15px;
         }
-        hr{
+
+        hr {
             border-top: 0.25px solid white;
             margin-top: 25px;
             max-width: 500px;
@@ -105,7 +112,7 @@
                         Get Last Name
                     </button>
                 </div>
-                
+
 
             </div>
         </div>
@@ -124,37 +131,37 @@
         </div>
 
 
-        
+
     </div>
-    
+
 
     <script src="./dist/khmernamegenerator.min.js" type="text/javascript"></script>
     <script>
 
-     
-        document.getElementById("fullname").onclick = function() {
+
+        document.getElementById("fullname").onclick = function () {
             var fullname = khmerNameGenerator.name.getRandomName();
             document.getElementById('text').innerHTML = fullname;
         };
 
-        document.getElementById("firstname").onclick = function() {
+        document.getElementById("firstname").onclick = function () {
             var firstname = khmerNameGenerator.name.getRandomFirstname();
             document.getElementById('text').innerHTML = firstname;
         };
 
-        document.getElementById("lastname").onclick = function() {
+        document.getElementById("lastname").onclick = function () {
             var lastname = khmerNameGenerator.name.getRandomLastname();
             document.getElementById('text').innerHTML = lastname;
         };
 
-        document.getElementById("latlong").onclick = function() {
+        document.getElementById("latlong").onclick = function () {
 
             document.getElementById('province').innerHTML = '';
 
             let latlong = khmerNameGenerator.provincewithlatlong.getProvinceWithLatLong();
-            latlong.forEach(function(element){
+            latlong.forEach(function (element) {
                 let list = document.createElement('li');
-                let textlist = document.createTextNode(`${element}`);
+                let textlist = document.createTextNode(element);
                 list.appendChild(textlist);
                 document.getElementById('province').appendChild(list);
 
