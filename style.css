@@ -1,0 +1,86 @@
+
+        * {
+            padding: 0px;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        .main {
+            min-height: 100vh;
+            background: rgb(174, 238, 237);
+            background: linear-gradient(162deg, rgba(174, 238, 237, 1) 0%, rgba(142, 148, 255, 0.9416141456582633) 100%);
+            padding-bottom: 50px;
+        }
+
+        .header {
+            background-color: white;
+            color: navy;
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .text--section {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: navy;
+            background-color: white;
+            min-height: 150px;
+            border-radius: 25px;
+        }
+
+        .main--text--section {
+            padding: 0px 50px;
+        }
+
+        .button--main--layout {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+
+        button {
+            border-radius: 25px;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            outline: none;
+            background: rgb(15, 8, 142);
+            background: linear-gradient(90deg, rgba(15, 8, 142, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        button:active {
+            background-color: #2856ad;
+            box-shadow: 0 5px rgb(255, 255, 255);
+            transform: translateY(4px);
+        }
+
+        .province {
+            padding: 15px;
+        }
+
+        hr {
+            border-top: 0.25px solid white;
+            margin-top: 25px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .word-input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+    
