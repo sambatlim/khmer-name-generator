@@ -1,6 +1,6 @@
 {
   "name": "khmer-name-generator",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "khmer name generator is the package to generate real khmer name, name of the cambodia city and province including the lat long",
   "keywords": [
     "khmer",
